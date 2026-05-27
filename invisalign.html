@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>INE Dental Practice - Precision Orthodontics | Invisalign</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Open+Sans:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .clinical-glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#39141e",
+                        "tertiary-fixed-dim": "#f4b6c2",
+                        "on-secondary-fixed-variant": "#004f53",
+                        "background": "#f8fafb",
+                        "primary-fixed-dim": "#aec7f7",
+                        "healthy-pink": "#F4B6C2",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#a0f0f5",
+                        "surface-container-low": "#f2f4f5",
+                        "on-tertiary-fixed": "#330f19",
+                        "secondary-fixed": "#a0f0f5",
+                        "primary-container": "#1b365d",
+                        "hygiene-white": "#FFFFFF",
+                        "surface-container": "#eceeef",
+                        "on-primary-fixed-variant": "#2e476f",
+                        "primary-fixed": "#d6e3ff",
+                        "calm-teal": "#72C1C6",
+                        "primary": "#002046",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#d8dadb",
+                        "secondary": "#00696e",
+                        "on-surface": "#191c1d",
+                        "deep-navy": "#1B365D",
+                        "inverse-on-surface": "#eff1f2",
+                        "surface-container-high": "#e6e8e9",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "secondary-fixed-dim": "#84d3d8",
+                        "inverse-surface": "#2e3132",
+                        "surface-tint": "#465f88",
+                        "on-primary": "#ffffff",
+                        "outline": "#74777f",
+                        "on-secondary-fixed": "#002021",
+                        "outline-variant": "#c4c6cf",
+                        "on-secondary-container": "#106f74",
+                        "on-surface-variant": "#44474e",
+                        "inverse-primary": "#aec7f7",
+                        "tertiary-fixed": "#ffd9df",
+                        "on-background": "#191c1d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#663a44",
+                        "on-primary-fixed": "#001b3d",
+                        "on-primary-container": "#87a0cd",
+                        "clinical-grey": "#E2E8F0",
+                        "surface-bright": "#f8fafb",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface": "#f8fafb",
+                        "tertiary-container": "#532933",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-container": "#c98f9b",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max-width": "1280px",
+                        "base": "8px",
+                        "section-gap-desktop": "120px",
+                        "section-gap-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Open Sans"],
+                        "headline-sm": ["Inter"],
+                        "body-md": ["Open Sans"],
+                        "label-sm": ["Open Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["30px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-background font-body-md antialiased">
+    <!-- TopNavBar -->
+    <header class="sticky top-0 w-full z-50 shadow-[0px_4px_20px_rgba(27,54,93,0.06)] bg-hygiene-white">
+    <nav class="flex items-center max-w-[1280px] mx-auto px-gutter md:py-4 transition-all duration-300 justify-start py-4">
+        <div class="flex items-center gap-4 mr-auto">
+        <img alt="INE Dental Practice Logo" class="h-10 md:h-12 w-auto object-contain" src="logo.png">
+        <div class="hidden sm:block font-headline-sm text-primary font-bold tracking-tight">INE Dental Practice</div>
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+        <a class="text-primary font-medium hover:text-calm-teal transition-all duration-300" href="index.html">Home</a>
+        <a class="text-primary font-medium hover:text-calm-teal transition-all duration-300" href="fees.html">Fees</a>
+        <a class="text-calm-teal font-bold border-b-2 border-calm-teal pb-1" href="invisalign.html">Invisalign</a>
+        <button class="bg-calm-teal text-hygiene-white px-6 py-2.5 rounded-lg font-label-sm active:scale-95 transform transition-transform hover:opacity-90"
+            onclick="window.location.href='index.html#contact-us'">Book Appointment</button>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section
+            class="relative overflow-hidden pt-12 md:pt-24 pb-12 md:pb-32 transition-all duration-1000 opacity-100 translate-y-0">
+            <div class="max-w-[1280px] mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-6 z-10">
+                    <span
+                        class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm mb-6">
+                        Modern Orthodontics
+                    </span>
+                    <h1 class="font-display-lg text-display-lg text-primary mb-6">
+                        The Invisible Path to Your Perfect Smile
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                        Invisalign clear aligners at INE Dental Practice offer a nearly undetectable, removable, and
+                        comfortable way to straighten your teeth without the hassle of traditional metal braces.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-calm-teal text-hygiene-white px-8 py-4 rounded-lg font-headline-sm hover:opacity-90 transition-all flex items-center justify-center gap-2 group"
+                            onclick="window.location.href='{{DATA:SCREEN:SCREEN_2}}#appointment-section'">
+                            Book a Consultation
+                            <span
+                                class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                        <button
+                            class="border-2 border-deep-navy text-deep-navy px-8 py-4 rounded-lg font-headline-sm hover:bg-deep-navy hover:text-hygiene-white transition-all flex items-center justify-center gap-2"
+                            onclick="window.location.href='{{DATA:SCREEN:SCREEN_7}}'">
+                            View Fees Guide
+                        </button>
+                    </div>
+                </div>
+                <div class="md:col-span-6 relative">
+                    <div
+                        class="rounded-3xl overflow-hidden shadow-[0px_12px_40px_rgba(27,54,93,0.12)] border-8 border-hygiene-white rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img alt="Person smiling with clear aligners" class="w-full h-auto"
+                            data-alt="A close-up, high-key portrait of a smiling woman with perfectly straight teeth, subtly showcasing the transparency of Invisalign clear aligners. The lighting is soft and clinical, set against a pristine, hygienic white studio background. The mood is confident, healthy, and modern, reflecting a professional medical aesthetic with a soft teal color accent in the periphery."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtF7fQ7kC1SCRWKM6u1l8FE2gVa27IDUEVU-w9VIyNl7BQ4Y1ZfVS3k3XhYb9kZK94KHnRX78BPtChoh3cNJOVPmCeTcIpununw2vt7tpEIqOlCKkt4TI5UbBjgXdPtzS_08gEWFaRPRp8v8iELF9t4NbR4d73IVBZQxvK-d8oZ2EfXdz1S4MjbOD4iwFQXepz3wbvjnf9dxMIeubH-WXHogrrdceBxr_qZI1w5LIhLk_9Pu7smxGJyw2QuR9q2F4o6yb96qKO8A" />
+                    </div>
+                    <!-- Accent card -->
+                    <div
+                        class="absolute -bottom-6 -left-6 clinical-glass p-6 rounded-2xl shadow-lg border border-clinical-grey hidden md:block">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-calm-teal/10 rounded-full flex items-center justify-center text-calm-teal">
+                                <span class="material-symbols-outlined">verified</span>
+                            </div>
+                            <div>
+                                <p class="font-label-sm text-primary">Certified Providers</p>
+                                <p class="text-xs text-on-surface-variant">Expertise you can trust</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Big Three Benefits -->
+        <section class="bg-hygiene-white py-[120px] transition-all duration-1000 opacity-100 translate-y-0">
+            <div class="max-w-[1280px] mx-auto px-gutter">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline-md text-headline-md text-primary mb-4">Precision Orthodontics, Redefined
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                        Invisalign helps you get the great smile you've always wanted with three key advantages that
+                        traditional braces simply cannot match.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Invisible -->
+                    <div
+                        class="p-10 rounded-2xl bg-surface-container-lowest border border-clinical-grey hover:border-calm-teal/50 transition-colors group">
+                        <div
+                            class="w-16 h-16 bg-calm-teal/10 rounded-2xl flex items-center justify-center text-calm-teal mb-8 group-hover:bg-calm-teal group-hover:text-hygiene-white transition-all">
+                            <span class="material-symbols-outlined text-4xl">visibility_off</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Invisible</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            The aligners are nearly undetectable. No one can tell you're straightening your teeth, so
+                            you can smile more during treatment as well as after.
+                        </p>
+                    </div>
+                    <!-- Removable -->
+                    <div
+                        class="p-10 rounded-2xl bg-surface-container-lowest border border-clinical-grey hover:border-calm-teal/50 transition-colors group">
+                        <div
+                            class="w-16 h-16 bg-calm-teal/10 rounded-2xl flex items-center justify-center text-calm-teal mb-8 group-hover:bg-calm-teal group-hover:text-hygiene-white transition-all">
+                            <span class="material-symbols-outlined text-4xl">restaurant</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Removable</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            Eat and drink what you want while in treatment. Brushing and flossing remain effortless,
+                            ensuring optimal oral hygiene throughout your journey.
+                        </p>
+                    </div>
+                    <!-- Comfortable -->
+                    <div
+                        class="p-10 rounded-2xl bg-surface-container-lowest border border-clinical-grey hover:border-calm-teal/50 transition-colors group">
+                        <div
+                            class="w-16 h-16 bg-calm-teal/10 rounded-2xl flex items-center justify-center text-calm-teal mb-8 group-hover:bg-calm-teal group-hover:text-hygiene-white transition-all">
+                            <span class="material-symbols-outlined text-4xl">sentiment_satisfied</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Comfortable</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            No metal to cause mouth abrasions. No wires to adjust. Smooth, medical-grade plastic
+                            custom-molded to your unique anatomy for a painless experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Process Bento Grid -->
+        <section class="py-[120px] transition-all duration-1000 opacity-100 translate-y-0">
+            <div class="max-w-[1280px] mx-auto px-gutter">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    <!-- Text Block -->
+                    <div class="lg:col-span-5 flex flex-col justify-center">
+                        <h2 class="font-headline-md text-headline-md text-primary mb-6">Your Transformation Timeline
+                        </h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Invisalign is a series of custom-made, nearly undetectable aligners proven effective in both
+                            clinical research and practices nationwide.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="font-display-lg text-calm-teal opacity-20 select-none">01</div>
+                                <div>
+                                    <h4 class="font-headline-sm text-primary text-lg mb-1">2-Week Cycles</h4>
+                                    <p class="text-on-surface-variant">Wear each set of aligners for about 2 weeks,
+                                        removing them only to eat, drink, or brush.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="font-display-lg text-calm-teal opacity-20 select-none">02</div>
+                                <div>
+                                    <h4 class="font-headline-sm text-primary text-lg mb-1">4-Week Check-ups</h4>
+                                    <p class="text-on-surface-variant">Quick progress visits ensure your teeth are
+                                        moving precisely as planned in your digital model.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="font-display-lg text-calm-teal opacity-20 select-none">03</div>
+                                <div>
+                                    <h4 class="font-headline-sm text-primary text-lg mb-1">9-15 Month Average</h4>
+                                    <p class="text-on-surface-variant">Most treatments require between 18 and 30
+                                        aligners to achieve the final prescribed position.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Visual Block -->
+                    <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+                        <div
+                            class="bg-hygiene-white rounded-3xl p-4 shadow-[0px_4px_20px_rgba(27,54,93,0.06)] flex flex-col">
+                            <img class="rounded-2xl h-48 object-cover mb-4"
+                                data-alt="A highly detailed close-up of a dentist holding a clear Invisalign aligner against a bright, clinical background. The tray is crystal clear, reflecting the soft overhead LED lighting of a modern dental surgery. The image conveys precision engineering and hygienic safety through a minimalist, light-mode palette dominated by cool whites and soft teal tones."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUxl9AODBug6l4VRXnwq09l2tWsLvOamWYaCEGswrfhFVFORXGmNnV5shXUrYXm7Oph5-ftiy3VE908rjE91nmNvgCmlb6uRc2s46hHgj7IgYl6mMm1248r3nQhDVuM9E1uEueh27ELpcyQJG9KSJB7BeNz5TB2TLppYVoCUBWFiJkok-63ibeMeiVMlOzl5ZUGdRLZYO5hl5LGZoYTQrpLvkvgX8SqOPbpwataYc2M-b_yYD7bdF9yOlT8hklDCwdQIwts3X2Ww" />
+                            <p class="font-label-sm text-primary">Custom Precision</p>
+                            <p class="text-xs text-on-surface-variant">3D scans ensure a perfect fit for every aligner
+                                in your series.</p>
+                        </div>
+                        <div
+                            class="bg-deep-navy rounded-3xl p-8 text-hygiene-white flex flex-col justify-center items-center text-center">
+                            <span class="material-symbols-outlined text-6xl text-calm-teal mb-4">analytics</span>
+                            <h4 class="font-headline-sm mb-2">Virtual Planning</h4>
+                            <p class="text-sm opacity-80">View your own virtual treatment plan and see how your straight
+                                teeth will look before you even start.</p>
+                        </div>
+                        <div
+                            class="col-span-2 bg-calm-teal rounded-3xl p-8 flex items-center justify-between group cursor-pointer overflow-hidden relative">
+                            <div class="z-10">
+                                <h4 class="font-headline-md text-hygiene-white mb-2">Predictable Results</h4>
+                                <p class="text-hygiene-white/80 max-w-sm">Every week, your teeth move little by little
+                                    toward their ideal destination.</p>
+                            </div>
+                            <span
+                                class="material-symbols-outlined text-8xl text-hygiene-white/20 absolute -right-4 -bottom-4 group-hover:scale-110 transition-transform">auto_awesome</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us -->
+        <section class="bg-surface-container-low py-[120px] transition-all duration-1000 opacity-100 translate-y-0">
+            <div class="max-w-[1280px] mx-auto px-gutter">
+                <div class="bg-hygiene-white rounded-[40px] overflow-hidden shadow-sm flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-12 lg:p-20">
+                        <h2 class="font-headline-md text-headline-md text-primary mb-8">Why INE Dental for Invisalign?
+                        </h2>
+                        <ul class="space-y-8">
+                            <li class="flex gap-6">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-clinical-grey rounded-full flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-primary">medical_services</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-headline-sm text-lg text-primary mb-1">Expert Clinical Supervision
+                                    </h5>
+                                    <p class="text-on-surface-variant">Our dentists are highly trained in the Invisalign
+                                        protocol, ensuring safe and effective tooth movement.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-clinical-grey rounded-full flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-primary">biotech</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-headline-sm text-lg text-primary mb-1">State-of-the-Art Scanning
+                                    </h5>
+                                    <p class="text-on-surface-variant">We use high-resolution intraoral scanners,
+                                        eliminating the need for messy traditional impressions.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-clinical-grey rounded-full flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-primary">handshake</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-headline-sm text-lg text-primary mb-1">Patient-Centered Care</h5>
+                                    <p class="text-on-surface-variant">From your first scan to your final retainer, we
+                                        provide a warm, human touch to your high-tech journey.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-primary relative min-h-[400px]">
+                        <img class="absolute inset-0 w-full h-full object-cover opacity-80"
+                            data-alt="An expansive, high-end dental clinic interior featuring clean lines, hygienic white surfaces, and warm wood accents. Large floor-to-ceiling windows flood the space with natural light. The environment is calm, professional, and sophisticated, utilizing a palette of deep navy and soft teal to create a premium medical experience."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvPQTnYfAAlN-_1Gb9df9t8flVkSUi8lSBRUexl107IFK_4T4zsABqnnESAnxqKY4FKcwu_XzsdEKo7PGDxIIlN1DRFmSWUy8VVjY02JzfBJrydV_-jmu-ga59zDptPPnSDqGoV9NmTIrz97HkqR1RhkFnEf0XPJEWbvxZGV0BQrHqd03YZ-4WtEXJKjECGMkrYvHEe9Nu2hJOl0xhtouawg2gnVbsHgcq_R5KsiOYzOiRqn7D4DShXCBh48m-zVnvqVWiq8ytKg" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent md:bg-gradient-to-r">
+                        </div>
+                        <div class="absolute bottom-12 left-12 right-12 text-hygiene-white">
+                            <blockquote class="text-xl italic font-body-md mb-4">
+                                "The precision of Invisalign combined with the care at INE Dental completely changed my
+                                confidence."
+                            </blockquote>
+                            <p class="font-label-sm">— Sarah J., Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-[120px] bg-hygiene-white transition-all duration-1000 opacity-100 translate-y-0">
+            <div class="max-w-[1280px] mx-auto px-gutter text-center">
+                <div class="bg-calm-teal rounded-[40px] p-12 md:p-24 relative overflow-hidden shadow-xl">
+                    <!-- Decor -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-deep-navy/10 rounded-full -ml-32 -mb-32 blur-3xl">
+                    </div>
+                    <h2 class="font-display-lg text-display-lg text-hygiene-white mb-6 relative z-10">Start Your Smile
+                        Journey Today</h2>
+                    <p class="font-body-lg text-body-lg text-hygiene-white/90 mb-10 max-w-xl mx-auto relative z-10">
+                        Book your Invisalign consultation and discover the nearly invisible way to straighten your
+                        teeth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-6 relative z-10">
+                        <button
+                            class="bg-hygiene-white text-calm-teal px-10 py-5 rounded-xl font-headline-sm shadow-lg hover:scale-105 transition-transform active:scale-95"
+                            onclick="window.location.href='{{DATA:SCREEN:SCREEN_2}}#appointment-section'">
+                            Book Appointment
+                        </button>
+                        <a class="flex items-center gap-3 text-hygiene-white font-headline-sm hover:underline decoration-2 underline-offset-8"
+                            href="tel:07465442315"><span class="material-symbols-outlined">call</span>07465 442 315</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-primary text-hygiene-white border-t border-primary-container">
+        <div class="max-w-[1280px] mx-auto px-gutter py-8 md:py-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-6">
+            <div class="md:col-span-12">
+            <!-- Flex container to put items side by side -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-6">
+                
+                <!-- Left side: Logo + Tagline -->
+                <div class="space-y-1">
+                <div class="flex items-center gap-3">
+                    <img alt="Logo" class="h-8 w-auto" src="logo.png">
+                    <div class="font-headline-sm text-hygiene-white font-bold">
+                    INE Dental Practice
+                    </div>
+                </div>
+                <p class="text-primary-fixed-dim text-body-md">Advanced dentistry delivered with honesty and care.</p>
+                </div>
+                
+                <!-- Right side: Address, Phone, Email -->
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-calm-teal text-base">location_on</span>
+                    <span class="text-primary-fixed-dim text-body-md">316A Malden Rd, New Malden, KT3 6AU</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-calm-teal text-base">call</span>
+                    <a href="tel:07465442315" class="text-primary-fixed-dim hover:text-calm-teal transition-colors">07465 442 315</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-calm-teal text-base">email</span>
+                    <a href="mailto:hello@inedental.co.uk" class="text-primary-fixed-dim hover:text-calm-teal transition-colors">hello@inedental.co.uk</a>
+                </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="pt-4 border-t border-primary-container flex flex-col md:flex-row justify-between items-center gap-base">
+            <p class="font-label-sm text-primary-fixed-dim">© 2024 INE Dental Practice. Precision Care, Human Touch.</p>
+        </div>
+        </div>
+    </footer>
+    <!-- FAB -->
+    <button
+        class="fixed bottom-8 right-8 bg-calm-teal text-hygiene-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-transform z-40 md:hidden"
+        onclick="window.location.href='{{DATA:SCREEN:SCREEN_2}}#appointment-section'">
+        <span class="material-symbols-outlined">calendar_month</span>
+    </button>
+    <script>
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        // Apply animations to sections
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>INE Dental Practice | Dentist in Kingston & New Malden</title>
+  <meta name="description" content="Quality dental care in New Malden since 2006. Crowns, veneers, Invisalign, and implants. We provide a 3-year guarantee on selected treatments.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #1a2f3f;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* container utility */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* typography */
+    h1, h2, h3 {
+      font-weight: 600;
+      line-height: 1.2;
+      color: #0b3b4f;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 2.5rem 0 1rem 0;
+      border-left: 5px solid #2c7a5e;
+      padding-left: 1rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 1.5rem 0 0.5rem 0;
+      color: #2c7a5e;
+    }
+
+    .section-subhead {
+      color: #4a6a7a;
+      font-size: 1rem;
+      margin-top: -0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* buttons & links */
+    .btn {
+      display: inline-block;
+      background-color: #2c7a5e;
+      color: white;
+      padding: 0.75rem 1.8rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #1e5a45;
+    }
+
+    /* header + navigation */
+    .header {
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      position: relative;
+      z-index: 100;
+    }
+
+    .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+      display: block;
+    }
+
+    .logo a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: #0b3b4f;
+    }
+
+    .logo span {
+      color: #2c7a5e;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2c3f4b;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #2c7a5e;
+    }
+
+    /* hero section with background image */
+    .hero {
+      background-image: url('images/hero-bg.avif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 3rem 0;
+      border-bottom: 1px solid #e0ecd9;
+    }
+
+    /* overlay to make text readable on dark/light images */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.6);
+      z-index: 0;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .badge {
+      background: #e5f0eb;
+      color: #1e5a45;
+      padding: 0.25rem 0.75rem;
+      border-radius: 60px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    /* cards for services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin: 2rem 0 1rem;
+    }
+
+    .service-card {
+        background: #fefcf9;
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: all 0.2s;
+        border: 1px solid #e7efea;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        height: auto !important;  /* Force auto height */
+        min-height: auto !important;  /* Remove any min-height */
+        max-height: none !important;  /* Remove any max-height */
+    }
+
+    .service-card p {
+        overflow: visible;
+        white-space: normal;
+        word-wrap: break-word;
+        height: auto !important;
+        max-height: none !important;
+        display: block;
+        flex: 0 1 auto;
+}
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 30px -12px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card h3 {
+      margin-top: 0;
+    }
+
+    /* opening hours + contact double column */
+    .info-panel {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem 0 2rem;
+    }
+
+    .hours-box, .contact-box {
+      flex: 1;
+      background: #f9faf9;
+      border-radius: 1.8rem;
+      padding: 1.8rem;
+      border: 1px solid #e2eae5;
+    }
+
+    .hours-list {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #e0e8e3;
+    }
+
+    .contact-details {
+      margin: 1.5rem 0;
+    }
+
+    .contact-details p {
+      margin: 0.6rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .map-link {
+      margin-top: 1rem;
+    }
+
+    /* form */
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border-radius: 2rem;
+      border: 1px solid #cfdfd7;
+      font-family: inherit;
+      transition: 0.2s;
+      background: white;
+    }
+
+    textarea {
+      border-radius: 1.5rem;
+      resize: vertical;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #2c7a5e;
+      box-shadow: 0 0 0 3px rgba(44,122,94,0.1);
+    }
+
+    footer {
+      background: #0f2c24;
+      color: #cddfd9;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+    }
+
+    .toast-msg {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e2a32;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      z-index: 1100;
+      animation: fadeOut 3s ease forwards;
+      pointer-events: none;
+    }
+
+    .service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    }
+
+    .service-image-tall {
+    width: 100%;
+    height: auto;  /* Shows full image height */
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; bottom: 2rem; }
+      70% { opacity: 1; }
+      100% { opacity: 0; bottom: -2rem; display: none; }
+    }
+
+    @media (max-width: 760px) {
+      .container {
+        padding: 0 1.2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+      .nav-bar {
+        flex-direction: column;
+      }
+      .hero-grid {
+        flex-direction: column;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .info-panel {
+        flex-direction: column;
+      }
+      .service-image {
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container nav-bar">
+    <div class="logo">
+      <a href="#">
+        <!-- LOGO IMAGE - Replace 'logo.png' with your actual filename -->
+        <img src="images/logo.gif" alt="INE Dental Practice logo">
+        <span>INE<span> Dental</span></span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#hours">Opening hours</a>
+      <a href="#contact">Contact</a>
+      <a href="fee-guide.html">Fees guide</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- Hero / intro section with background image -->
+  <div class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge">🦷 Established 2006 • New Malden</span>
+        <h1>Quality you can feel, <br>honesty you can trust.</h1>
+        <p style="font-size: 1.2rem; margin: 1rem 0 1.5rem;">Dedicated and dependable dental care since 2006 in New Malden. Dr. Wooseung Chung (BDS) and team welcome you.</p>
+        <a href="#contact" class="btn">Book an appointment</a>
+      </div>
+      <div style="flex: 0.8; min-width: 180px;">
+        <div style="background:#e5f0eb; border-radius: 2rem; padding: 1.4rem; text-align:center;">
+          <span style="font-size: 2rem;">⭐</span>
+          <p style="font-weight:500; margin-top:0.5rem;">2+ year guarantee <br>on selected restorative treatments</p>
+          <small>If a covered treatment fails, it will be repaired or replaced free of charge.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- doctor background summary -->
+    <div style="background: #fefaf5; border-radius: 1.5rem; padding: 1.8rem; margin: 2rem 0;">
+      <p style="font-size:1rem;"><strong>Dr. Wooseung Chung (BDS)</strong> graduated from Seoul National University in 1988. He worked at a community health centre, completed a residency in Sejong Orthodontic Academy, and ran his private practice before moving to the UK. He has cared for patients at INE Dental Practice since 2006.</p>
+      <p style="margin-top: 1rem;">We follow strict safety protocols to protect against infectious diseases and minimise all risks to health. Your comfort, safety, and long‑term dental health are at the heart of what we do.</p>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <h2 id="services">✨ Our services</h2>
+    <p class="section-subhead">Tailored treatments, natural results — see below for examples. For full fee details please visit the “Services and Fees” page.</p>
+
+    <!-- Row 1: Crowns + Invisalign (normally sized images) -->
+    <div class="services-grid">
+        <div class="service-card">
+            <img class="service-image" src="images/crowns.avif" alt="Dental crown">
+            <h3>🦷 Crowns</h3>
+            <p>At INE, we take the time to design long-lasting crowns made just for you that function well, and look and feel natural with your smile. A crown is an artificial restoration that fits over the remaining part of a prepared tooth, making it strong and giving it the shape of a natural tooth. A crown is sometimes known as a 'cap'.</p>
+        </div>
+        <div class="service-card">
+            <img class="service-image" src="images/invisalign.avif" alt="Invisalign aligners">
+            <h3>😁 Invisible aligners & Braces</h3>
+            <p>At INE, we take the time to design long-lasting crowns made just for you that function well, and look and feel natural with your smile. A crown is an artificial restoration that fits over the remaining part of a prepared tooth, making it strong and giving it the shape of a natural tooth. A crown is sometimes known as a 'cap'.</p>
+        </div>
+    </div>
+
+    <!-- Row 2: Veneers + Implants (taller images, full height) -->
+    <div class="services-grid">
+        <div class="service-card">
+            <img class="service-image-tall" src="images/veneers.avif" alt="Porcelain veneers">
+            <h3>✨ Veneers</h3>
+            <p>We craft bespoke veneers that enhance your smile with natural-looking, long-lasting results — designed to feel as good as they look. Our Porcelain Veneers are ideal for making changes to the shape and/or color of your teeth. You'll usually get a more natural, attractive result by placing several veneers rather than just one. If you have existing dental work or very misaligned teeth, you may require more extensive cosmetic treatment.</p>
+        </div>
+        <div class="service-card">
+            <img class="service-image-tall" src="images/implants.avif" alt="Dental implants">
+            <h3>🦷 Implants</h3>
+            <p>Dental Implants are biocompatible titanium posts that are placed in the jawbone to mimic the root of a missing tooth. They act as a strong base to hold in place a replacement tooth. A prosthetic work such as a crown or a bridge or a denture can be attached to the implant to restore oral function to your mouth.</p>
+        </div>
+    </div>
+
+    <!-- OPENING HOURS + CONTACT combined panel -->
+    <div class="info-panel" id="hours">
+      <div class="hours-box">
+        <h3>📅 Opening hours</h3>
+        <ul class="hours-list">
+          <li><span>Monday</span> <span>9:30am – 6:00pm</span></li>
+          <li><span>Tuesday</span> <span>2:00pm – 6:00pm</span></li>
+          <li><span>Wednesday</span> <span>Closed</span></li>
+          <li><span>Thursday</span> <span>9:30am – 6:00pm</span></li>
+          <li><span>Friday</span> <span>2:00pm – 6:00pm</span></li>
+          <li><span>Saturday</span> <span>9:30am – 1:30pm</span></li>
+        </ul>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">📍 Closed on Sundays and bank holidays.</p>
+      </div>
+
+      <div class="contact-box" id="contact">
+        <h3>📞 Contact us</h3>
+        <div class="contact-details">
+          <p>📍 316A Malden Road, New Malden, Surrey, KT3 6AU</p>
+          <p>📞 <strong>07465 442 315</strong></p>
+          <p>✉️ <a href="mailto:hello@inedental.co.uk" style="color:#2c7a5e;">hello@inedental.co.uk</a></p>
+        </div>
+        <div class="map-link">
+          <a href="#" class="btn" style="background:#e2eae5; color:#1e5a45;">🗺️ Get directions (Google Maps)</a>
+        </div>
+      </div>
+    </div>
+
+  <!-- contact form -->
+  <div style="background:#ffffff; border-radius: 2rem; margin: 1rem 0 2rem; padding: 0.5rem 0 1rem 0;">
+      <h3>💬 Send us a message</h3>
+      <p>We'll get back to you as soon as possible. For urgent matters, please call us directly.</p>
+      
+      <form id="contactForm" netlify name="contact" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          
+          <div class="form-group">
+              <input type="text" name="name" placeholder="Your full name *" required>
+          </div>
+          <div class="form-group">
+              <input type="email" name="email" placeholder="Email address *" required>
+          </div>
+          <div class="form-group">
+              <input type="tel" name="phone" placeholder="Phone number *" required>
+          </div>
+          <div class="form-group">
+              <textarea rows="3" name="message" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn" style="background:#2c7a5e;">Send message</button>
+      </form>
+      
+      <p style="font-size:0.75rem; margin-top:1rem;">📋 We treat your data with care. Your message will be answered via email or phone.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 INE Dental Practice — Quality you can feel, honesty you can trust.<br>
+    Dedicated dental care since 2006 | 316A Malden Road, New Malden, Surrey KT3 6AU</p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+/*     const form = document.getElementById('contactForm');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name')?.value.trim();
+        const email = document.getElementById('email')?.value.trim();
+        if (!name || !email) {
+          alert('Please enter your name and email address.');
+          return;
+        }
+        console.log('📩 New contact message:', { name, email, message: document.getElementById('message')?.value.trim() });
+        showToast('✅ Message sent — we’ll get back to you shortly.');
+        form.reset();
+      });
+    } */
+
+    function showToast(msg) {
+      const existing = document.querySelector('.toast-msg');
+      if (existing) existing.remove();
+      const toast = document.createElement('div');
+      toast.className = 'toast-msg';
+      toast.textContent = msg;
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        if (toast && toast.parentNode) toast.remove();
+      }, 3500);
+    }
+
+    document.querySelectorAll('.nav-links a, .btn[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const hash = this.getAttribute('href');
+        if (hash && hash !== '#' && hash.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(hash);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>

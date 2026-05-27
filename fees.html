@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>INE Dental Practice | Services and Fees Guide</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Open+Sans:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-header {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .clinical-shadow {
+            box-shadow: 0px 4px 20px rgba(27, 54, 93, 0.06);
+        }
+
+        body {
+            background-color: #f8fafb;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#39141e",
+                        "tertiary-fixed-dim": "#f4b6c2",
+                        "on-secondary-fixed-variant": "#004f53",
+                        "background": "#f8fafb",
+                        "primary-fixed-dim": "#aec7f7",
+                        "healthy-pink": "#F4B6C2",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#a0f0f5",
+                        "surface-container-low": "#f2f4f5",
+                        "on-tertiary-fixed": "#330f19",
+                        "secondary-fixed": "#a0f0f5",
+                        "primary-container": "#1b365d",
+                        "hygiene-white": "#FFFFFF",
+                        "surface-container": "#eceeef",
+                        "on-primary-fixed-variant": "#2e476f",
+                        "primary-fixed": "#d6e3ff",
+                        "calm-teal": "#72C1C6",
+                        "primary": "#002046",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#d8dadb",
+                        "secondary": "#00696e",
+                        "on-surface": "#191c1d",
+                        "deep-navy": "#1B365D",
+                        "inverse-on-surface": "#eff1f2",
+                        "surface-container-high": "#e6e8e9",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "secondary-fixed-dim": "#84d3d8",
+                        "inverse-surface": "#2e3132",
+                        "surface-tint": "#465f88",
+                        "on-primary": "#ffffff",
+                        "outline": "#74777f",
+                        "on-secondary-fixed": "#002021",
+                        "outline-variant": "#c4c6cf",
+                        "on-secondary-container": "#106f74",
+                        "on-surface-variant": "#44474e",
+                        "inverse-primary": "#aec7f7",
+                        "tertiary-fixed": "#ffd9df",
+                        "on-background": "#191c1d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#663a44",
+                        "on-primary-fixed": "#001b3d",
+                        "on-primary-container": "#87a0cd",
+                        "clinical-grey": "#E2E8F0",
+                        "surface-bright": "#f8fafb",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface": "#f8fafb",
+                        "tertiary-container": "#532933",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-container": "#c98f9b",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max-width": "1280px",
+                        "base": "8px",
+                        "section-gap-desktop": "120px",
+                        "section-gap-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Inter", "sans-serif"],
+                        "headline-md": ["Inter", "sans-serif"],
+                        "headline-sm": ["Inter", "sans-serif"],
+                        "body-lg": ["Open Sans", "sans-serif"],
+                        "body-md": ["Open Sans", "sans-serif"],
+                        "label-sm": ["Open Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-background antialiased">
+    <!-- TopNavBar -->
+    <header class="sticky top-0 w-full z-50 shadow-[0px_4px_20px_rgba(27,54,93,0.06)] bg-hygiene-white">
+    <nav class="flex items-center max-w-[1280px] mx-auto px-gutter md:py-4 transition-all duration-300 justify-start py-4">
+        <div class="flex items-center gap-4 mr-auto">
+        <img alt="INE Dental Practice Logo" class="h-10 md:h-12 w-auto object-contain" src="logo.png">
+        <div class="hidden sm:block font-headline-sm text-primary font-bold tracking-tight">INE Dental Practice</div>
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+        <a class="text-primary font-medium hover:text-calm-teal transition-all duration-300" href="index.html">Home</a>
+        <a class="text-calm-teal font-bold border-b-2 border-calm-teal pb-1" href="fees.html">Fees</a>
+        <a class="text-primary font-medium hover:text-calm-teal transition-all duration-300" href="invisalign.html">Invisalign</a>
+        <button class="bg-calm-teal text-hygiene-white px-6 py-2.5 rounded-lg font-label-sm active:scale-95 transform transition-transform hover:opacity-90"
+            onclick="window.location.href='index.html#contact-us'">Book Appointment</button>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[400px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover"
+                    data-alt="A brightly lit, modern dental clinic reception area with white minimalist furniture and large glass windows. The atmosphere is calm and professional, featuring soft blue and white tones with a sense of hygienic precision. Sunlight streams through the space, emphasizing a breathable and high-end medical environment."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdTwirghZVzMyYuWZqjiq_gbQK5uA0LCThBs2YFgM5518bEtlsnDKzWBc9_PauaA0gi6slv2qZTVp_k88LO8QzMc_FpU7Dm1iY011nMkiRY9QJvepP_sa58pu2pLZ7IlHyy6qighr9nhg6oIQCw1fUjIAJOLOdwYvvAxJUXRpUNGxLn2j9kqp9qhxlLUVBhL7c79KZe-H41VRgZaJhs1w2bowMmIXhTt-0RtlaMEv0rQcn54KP4gR-mXWqbWQj-Yor6o1G0tpb_w" />
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+            </div>
+            <div class="container max-w-[1280px] mx-auto px-gutter relative z-10">
+                <div class="max-w-2xl text-white">
+                    <h1 class="font-display-lg text-[48px] leading-[56px] tracking-tight mb-4">Services and Fees Guide
+                    </h1>
+                    <p class="font-body-lg text-lg opacity-90 leading-relaxed">
+                        Exceptional care tailored to your individual needs. Precision treatments meet clinical comfort
+                        in the heart of our practice.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Intro Note -->
+        <section class="py-12 bg-white">
+            <div class="container max-w-[1280px] mx-auto px-gutter">
+                <div
+                    class="flex flex-col md:flex-row items-center gap-8 p-8 bg-surface-container-low rounded-xl border-l-4 border-calm-teal">
+                    <span class="material-symbols-outlined text-4xl text-calm-teal">info</span>
+                    <p class="font-body-md text-on-surface-variant">
+                        Fees for some services vary by individual case. Please do not hesitate to enquire about any fees
+                        not listed, or for more details about our clinical services. Your comfort and safety are at the
+                        heart of what we do.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing Bento Grid -->
+        <section class="py-section-gap-desktop px-gutter">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                    <!-- Check-ups Card -->
+                    <div
+                        class="md:col-span-4 bg-white p-8 rounded-xl clinical-shadow border border-clinical-grey group hover:border-calm-teal transition-colors">
+                        <div class="w-12 h-12 rounded-full bg-calm-teal/10 flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-calm-teal">clinical_notes</span>
+                        </div>
+                        <h3 class="font-headline-sm text-primary mb-6">Check-ups</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center py-2 border-b border-clinical-grey">
+                                <span class="text-on-surface-variant">New Patients</span>
+                                <span class="font-bold text-primary">£55</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-clinical-grey">
+                                <span class="text-on-surface-variant">Routine Check Up</span>
+                                <span class="font-bold text-primary">£45</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2">
+                                <span class="text-on-surface-variant">Child (up to 12)</span>
+                                <span class="font-bold text-primary">£30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Scaling & Whitening -->
+                    <div
+                        class="md:col-span-8 bg-white p-8 rounded-xl clinical-shadow border border-clinical-grey flex flex-col md:flex-row gap-8">
+                        <div class="flex-1">
+                            <div class="w-12 h-12 rounded-full bg-calm-teal/10 flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined text-calm-teal">cleaning_services</span>
+                            </div>
+                            <h3 class="font-headline-sm text-primary mb-6">Hygiene &amp; Scaling</h3>
+                            <div class="flex justify-between items-center py-4 border-b border-clinical-grey">
+                                <span class="text-on-surface-variant">Standard Scaling (20-30 Mins)</span>
+                                <span class="font-bold text-primary">£70</span>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="w-12 h-12 rounded-full bg-calm-teal/10 flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined text-calm-teal">flare</span>
+                            </div>
+                            <h3 class="font-headline-sm text-primary mb-6">Whitening</h3>
+                            <div class="space-y-2">
+                                <div class="flex justify-between items-center py-2 border-b border-clinical-grey">
+                                    <span class="text-on-surface-variant">Professional (Up to 2 visits)</span>
+                                    <span class="font-bold text-primary">£240 (+ £60 thereafter)</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-clinical-grey">
+                                    <span class="text-on-surface-variant">Home Kit</span>
+                                    <span class="font-bold text-primary">£180</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2">
+                                    <span class="text-on-surface-variant">Scaling Add-on</span>
+                                    <span class="font-bold text-primary">+£30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fillings & Root Canal -->
+                    <div class="md:col-span-7 bg-primary text-white p-8 rounded-xl clinical-shadow">
+                        <h3 class="font-headline-sm mb-8 text-healthy-pink">Restorative Care</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                            <div>
+                                <p class="font-label-sm uppercase tracking-widest text-on-primary-container mb-4">
+                                    Fillings</p>
+                                <ul class="space-y-4">
+                                    <li class="flex justify-between border-b border-white/10 pb-2">
+                                        <span class="">Amalgam</span>
+                                        <span class="font-bold">£90</span>
+                                    </li>
+                                    <li class="flex justify-between border-b border-white/10 pb-2">
+                                        <span class="">Composite</span>
+                                        <span class="font-bold">£110</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span class="">Child</span>
+                                        <span class="font-bold">from £40</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-label-sm uppercase tracking-widest text-on-primary-container mb-4">Root
+                                    Canal</p>
+                                <ul class="space-y-4">
+                                    <li class="flex justify-between border-b border-white/10 pb-2">
+                                        <span class="">Front Incisor</span>
+                                        <span class="font-bold">£270</span>
+                                    </li>
+                                    <li class="flex justify-between border-b border-white/10 pb-2">
+                                        <span class="">Pre-Molar</span>
+                                        <span class="font-bold">From £380</span>
+                                    </li>
+                                    <li class="flex justify-between border-b border-white/10 pb-2">
+                                        <span class="">Molar</span>
+                                        <span class="font-bold">From £470</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span class="">Child</span>
+                                        <span class="font-bold">From £60</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Extractions -->
+                    <div class="md:col-span-5 bg-white p-8 rounded-xl clinical-shadow border border-clinical-grey">
+                        <div class="w-12 h-12 rounded-full bg-error/10 flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-error">heart_minus</span>
+                        </div>
+                        <h3 class="font-headline-sm text-primary mb-6">Extractions</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center py-3 border-b border-clinical-grey">
+                                <span class="text-on-surface-variant">Simple Extraction</span>
+                                <span class="font-bold text-primary">£125</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-clinical-grey">
+                                <span class="text-on-surface-variant">Surgical</span>
+                                <span class="font-bold text-primary">from £180</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3">
+                                <span class="text-on-surface-variant">Surgical Wisdom</span>
+                                <span class="font-bold text-primary">from £250</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Crowns Asymmetric Layout -->
+                    <div class="md:col-span-12 lg:col-span-8 bg-white overflow-hidden rounded-xl clinical-shadow border border-clinical-grey flex flex-col md:flex-row">
+                        <div class="md:w-3/5 p-8">
+                            <h3 class="font-headline-sm text-primary mb-6">Premium Crowns</h3>
+                            <div class="grid grid-cols-1 gap-4">
+                                <div class="p-4 bg-surface-container-low rounded-lg flex justify-between">
+                                    <span class="font-semibold">PFM (Porcelain Fused to Metal)</span>
+                                    <span class="text-primary font-bold">From £460</span>
+                                </div>
+                                <div class="p-4 bg-surface-container-low rounded-lg flex justify-between">
+                                    <span class="font-semibold">Lava (High Precision Zirconia)</span>
+                                    <span class="text-primary font-bold">From £490</span>
+                                </div>
+                                <div class="p-4 bg-surface-container-low rounded-lg flex justify-between">
+                                    <span class="font-semibold">Gold</span>
+                                    <span class="text-primary font-bold">From £520</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Invisalign Specialist -->
+                    <div
+                        class="md:col-span-12 lg:col-span-4 bg-calm-teal text-white p-8 rounded-xl clinical-shadow flex flex-col justify-between">
+                        <div>
+                            <span
+                                class="inline-block px-3 py-1 bg-white/20 rounded-full text-[10px] uppercase font-bold tracking-widest mb-4">Specialist
+                                Service</span>
+                            <h3 class="font-headline-sm mb-4">Invisalign®</h3>
+                            <p class="font-body-md opacity-90 mb-6">Transform your smile with nearly invisible aligners.
+                                Modern, comfortable, and tailored to you.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center py-2 border-b border-white/20">
+                                <span class="">Initial Consultation</span>
+                                <span class="font-bold">£55</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="">Full Treatment</span>
+                                <span class="font-bold">Enquire</span>
+                            </div>
+                            <button
+                                class="w-full bg-white text-calm-teal py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all mt-4">
+                                Book Consultation
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Secondary Services -->
+                    <div class="md:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-xl border border-clinical-grey">
+                            <h4 class="font-headline-sm text-primary mb-2">Implants</h4>
+                            <p class="text-on-surface-variant mb-4">From £900 (Case dependent)</p>
+                            <a class="text-calm-teal font-label-sm hover:underline" href="#">Request details</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-clinical-grey">
+                            <h4 class="font-headline-sm text-primary mb-2">Braces</h4>
+                            <p class="text-on-surface-variant mb-4">Dependent on individual case</p>
+                            <a class="text-calm-teal font-label-sm hover:underline" href="#">Book assessment</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-clinical-grey">
+                            <h4 class="font-headline-sm text-primary mb-2">Other Enquiries</h4>
+                            <p class="text-on-surface-variant mb-4">Consultation with impressions £75<br />Consultation
+                                no impression £50</p>
+                            <a class="text-calm-teal font-label-sm hover:underline" href="#">View all</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="bg-primary-container py-20">
+            <div class="container max-w-[1280px] mx-auto px-gutter text-center">
+                <h2 class="font-headline-md text-white mb-6">Ready to prioritize your dental health?</h2>
+                <p class="font-body-lg text-on-primary-container max-w-2xl mx-auto mb-10">
+                    Join INE Dental Practice today for precision-led care and a patient-first experience. Our clinical
+                    team is ready to welcome you.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a class="bg-calm-teal text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-calm-teal/20 transition-all inline-block"
+                        href="{{DATA:SCREEN:SCREEN_2}}#contact">Book Your Appointment</a>
+                    <button
+                        class="bg-transparent border-2 border-white/20 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/5 transition-all">
+                        Contact Support
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-primary text-hygiene-white border-t border-primary-container">
+        <div class="max-w-[1280px] mx-auto px-gutter py-8 md:py-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-6">
+            <div class="md:col-span-12">
+            <!-- Flex container to put items side by side -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-6">
+                
+                <!-- Left side: Logo + Tagline -->
+                <div class="space-y-1">
+                <div class="flex items-center gap-3">
+                    <img alt="Logo" class="h-8 w-auto" src="logo.png">
+                    <div class="font-headline-sm text-hygiene-white font-bold">
+                    INE Dental Practice
+                    </div>
+                </div>
+                <p class="text-primary-fixed-dim text-body-md">Advanced dentistry delivered with honesty and care.</p>
+                </div>
+                
+                <!-- Right side: Address, Phone, Email -->
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-calm-teal text-base">location_on</span>
+                    <span class="text-primary-fixed-dim text-body-md">316A Malden Rd, New Malden, KT3 6AU</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-calm-teal text-base">call</span>
+                    <a href="tel:07465442315" class="text-primary-fixed-dim hover:text-calm-teal transition-colors">07465 442 315</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-calm-teal text-base">email</span>
+                    <a href="mailto:hello@inedental.co.uk" class="text-primary-fixed-dim hover:text-calm-teal transition-colors">hello@inedental.co.uk</a>
+                </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="pt-4 border-t border-primary-container flex flex-col md:flex-row justify-between items-center gap-base">
+            <p class="font-label-sm text-primary-fixed-dim">© 2024 INE Dental Practice. Precision Care, Human Touch.</p>
+        </div>
+        </div>
+    </footer>
+    <!-- Floating Booking Action for Mobile -->
+    <div class="fixed bottom-6 right-6 md:hidden z-50">
+        <button
+            class="bg-calm-teal text-white p-4 rounded-full shadow-2xl flex items-center justify-center active:scale-90 transition-transform"
+            onclick="window.location.href='{{DATA:SCREEN:SCREEN_2}}#contact'">
+            <span class="material-symbols-outlined">calendar_month</span>
+        </button>
+    </div>
+</body>
+
+</html>
